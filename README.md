@@ -28,6 +28,17 @@ Flags work like PowerShell parameters: they're case-insensitive, can be shortene
 
 On its first run Scamper saves the original layout to `scamper-originalDesktopPosition.json` next to the exe. Each later start first restores that layout and then drifts from there, so the drift doesn't pile up across runs. `-Restore` puts the icons back and deletes the file. Only one copy runs at a time.
 
+## Download
+
+Prebuilt `scamper-x64.exe` and `scamper-x86.exe` (for 32-bit Windows) are attached to each release on the Releases page. Every push is also built by GitHub Actions, and the exes are attached to that workflow run as artifacts.
+
+To publish a release, push a version tag. The workflow builds both exes and creates the release:
+
+```
+git tag v1.0.0
+git push origin v1.0.0
+```
+
 ## Building
 
 Build from a Developer PowerShell or Developer Command Prompt for Visual Studio with the "Desktop development with C++" workload:
