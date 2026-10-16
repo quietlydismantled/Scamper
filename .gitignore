@@ -1,0 +1,10 @@
+# Build outputs
+*.obj
+*.res
+*.exe
+*.pdb
+*.ilk
+
+# Saved desktop layouts (written next to the exe / script at run time)
+scamper-originalDesktopPosition.json
+DesktopDrift-OriginalLayout.json

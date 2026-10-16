@@ -1,0 +1,4 @@
+// Compile with: rc /nologo scamper.rc   (produces scamper.res for the cl command line)
+
+// The first icon resource is also the one Explorer shows for scamper.exe.
+1 ICON "scamper.ico"
